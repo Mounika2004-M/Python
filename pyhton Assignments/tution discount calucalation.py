@@ -30,7 +30,6 @@ if  grade>=1 and grade <= 12:
     total_discount = discount + extra_discount
     discount_amount = (total_discount / 100) * base_tuition_fee
     final_fee = base_tuition_fee - discount_amount
-    print("\n----- Tuition Fee Summary -----")
     print(f"Student Name        :{studetname}")
     print(f"Grade             :{ grade}")
     print("Academic Topper     :", "Yes" if topper == "yes" else "No")
