@@ -4,7 +4,7 @@ grade=int(input("Enter student Grade(1-12):"))
 if  grade>=1 and grade <= 12:
     print("Valid Grade")
     base_tuition_fee=int(input("Enter Base tuition fee: "))
-    topper = input("Is the student an academic topper? (yes/no): ").strip().lower()
+    topper = input("Is the student an academic topper? (yes/no): ")
     discount_percentage= 0.0
     if  grade>=9 and grade <= 12:
         if topper == "yes":
