@@ -619,5 +619,268 @@
     -> NOTE - Use top store data based on key values
 
 
+    12th Aug
+=========
+
+    -> Student Management System Using Data Structures
+    
+            -> Implementing CRUD like operations using Console Based
+
+16th Aug
+=========
+
+-> Functional Based Programming
+
+    -> Functions - function is a block of code which performs some tasks or Applications
+
+    -> Functions can help break down complex problems into simpler and smaller 
+        manageable tasks
+    
+    -> You can call a function, multiple times, which avoids code repetition
+        and helps you get code reusability
+
+    -> functions syntax
+
+        def function_name():
+            Statements    
+
+    -> Functions With Parameters
+
+        -> This approach allows your functions to take
+            Dynamic inputs 
+        
+    -> Based on arguments passed, we have different types of functions
+
+        -> Positional Arguments 
+        -> Default Arguments  
+        -> Keyword Arguments    
+        -> Arbitrary Positional Arguments (*args)
+        -> Arbitrary Keyword Arguments (**kwargs)
+
+    -> Positional Arguments - The passed arguments to the function, should have 
+        exact order defined in function signature
+
+        -> Here positions will change functionality, if incorrectly used
+
+    -> Default Arguments  - Passing default values as the arguments to the functions
+
+        -> Default values will be overridden by values passed at the function call
+
+        -> Once start adding a default arguments, the next preceding values should be 
+            default only not other types
+
+            # SyntaxError: non-default argument follows default argument
+        
+        -> Keyword Arguments - Arguments are passed by explicitly specifying the
+            name, so function call is based on name of the argument
+
+            -> order doesn't matter anymore, as keys are passed based on names
+
+            -> Improves code readability, and avoids confusion, when we have multiple 
+                Parameters 
+
+            -> Next all the  preceding values should be of same type not other types  
+
+        ->  Arbitrary Positional Arguments (*args)  
+
+            Arbitrary means random / unknown
+
+            -> These functions will accept any number of Positional based arguments
+
+            -> All values will be Collected into a tuple
+
+        -> Arbitrary Keyword Arguments (**kwargs)     
+
+            -> These functions will accept any number of Keyword based arguments
+
+            -> All values will be Collected into a Dictionary
+
+17th Aug
+=========
+
+-> Return keywords is used in functions to give 
+    appropriate response when function is called
+
+-> Generally return should be the last Statement, inside
+    the function execution
+
+-> If we are using multiple return Statements sequentially
+    the first return will be executed, not the others
+
+-> You can have multiple return Statements, but the Logic
+    should be appropriate
+
+
+-> Scope Of Variables Within Functions
+
+    -> Scope - where in the code, a variable can be used 
+        or not
+
+    -> Local Scope
+
+        -> A Local variable declared inside a function
+        -> It only exists while the function runs
+        -> You cannot use them outside the function
+
+    -> Global Scope  
+
+        -> A Global variable is declared outside the function
+        -> It can be used anywhere in code, inside or outside
+            functions
+        -> As globals variables can be accessed within Functions
+            and there can be a name conflict, in that case
+            Local variables get first preference inside functions
+        -> You cannot change global variables(read only by default)      
+        -> If you want them to change inside function, then we need
+            to use a special keyword called global
+
+    -> Function Composition
+
+        -> Function calling another function for reusability
+
+-> Types Of Functions
+
+    -> Built In Functions
+
+        -> Functions which are already pre built into python
+
+        -> No need to define them, they are ready to use
+
+            -> print() -> display output
+            -> id() -> display object address
+            -> input() -> take user input
+            -> len() -> number of elements
+            -> max() -> give largest element
+            -> etc
+
+    -> User Defined Functions
+
+        -> Functions that your create by yourself, based on 
+            requirements using def keyword
+
+        -> Whatever we did so far are user defined functions    
+
+    -> Lambda Functions (Anonymous Functions)
+
+        -> Lambda functions are One line functions
+
+        -> NOTE - Used only for Single line Expressions
+
+        -> We use lambda keyword, and result of the Expression
+            is automatically returned 
+        
+        -> Mainly used for tasks, when passing a function 
+            as an argument
+
+        -> syntax
+
+            lambda arguments: expression    
+
+            NOTE: arguments cab ne multiple, but only one line expression
+
+        -> IILE - Immediately Invoked Lambda Functions         
+
+
+19th Aug
+=========
+
+-> Core Idea Of Functional Programming
+
+    -> Just like lambda functions, functions that take another function as an argument
+
+    -> We use higher order functions
+
+        -> map
+        -> filter
+        -> reduce
+
+    -> We want to write concise code, without using lengthy code like custom loops
+
+
+    -> map - Used to applying a function on each item in the iterable 
+
+        -> earlier we used some for loop and performed operations
+
+        -> syntax 
+
+            map(function, iterable)
+
+        -> Think of map() as - Do this for every item in the iterable
+
+    
+    -> filter - Used to applying a function on each item in the iterable with a condition
+
+        -> earlier we used some for loop with condition and performed operations
+
+        -> syntax 
+
+            filter(function, iterable)
+        
+         -> Think of filter() as - Keep Only items, where the condition is met
+
+    -> reduce -  used to reduce an iterable to single value, applying the function
+        cumulatively 
+
+            -> syntax 
+
+            reduce(function, iterable)
+
+        -> reduce is a part of module (functools), so we need to import before using it 
+
+
+    -> TASK - Rewrite the LMS DS App with below implementation
+
+        -> if choice == "1":
+            add_student()
+
+        -> if choice == "2":
+            update_student()
+        
+        -> Implement a new option to work a search criteria, where search students 
+            should displayed based if has that skill
+
+            print("4 - List All Students")
+            print("5 - Search")    
+            print("6 - Exit System")  
+
+            -> NOTE - Use lambda based approach 
+
+-> Modules
+
+    -> A module is a python file, that contains
+
+        -> variables
+        -> Statements
+        -> functions
+        -> classes 
+        -> etc
+    
+    -> This approach allows reusability, across multiple programs
+        by importing the module, rather than rewriting again
+
+    -> Mainly for
+
+        -> Reusability
+
+        -> Better Code organize
+
+    -> Types Of Modules
+
+        -> Built In Modules
+
+            -> Comes with python installation
+
+        -> User Defined Modules
+
+            -> Created By Users, based on their requirements
+
+        -> External Modules 
+
+            -> Developed By Communities, Third party vendors
+
+            -> We need a tool called pip for working with
+                External modules (pip - py)
+
+
 
 
