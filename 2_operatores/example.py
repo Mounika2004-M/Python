@@ -7,7 +7,7 @@ if grade < 1 or grade > 12:
 else:
     base_tuition_fee = int(input("Enter Base tuition fee: "))
     discount_percentage = 0.0
-    topper = input("The student an academic topper (yes/no): ").lower()
+    topper = input("The student an academic topper (yes/no): ")
     if grade >= 9 and grade <= 12:
         if topper == "yes":
             discount = 20
